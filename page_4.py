@@ -48,11 +48,11 @@ import os
 import torch
 from model import EncoderCNN, DecoderRNN
 
-# TODO #2: Specify the saved models to load.
+# Specify the saved models to load.
 encoder_file = "encoder-1.pkl"
 decoder_file = "decoder-1.pkl"
 
-# TODO #3: Select appropriate values for the Python variables below.
+# Select appropriate values for the Python variables below.
 embed_size = 250
 hidden_size = 200
 
