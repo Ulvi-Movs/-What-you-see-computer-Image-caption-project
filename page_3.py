@@ -66,10 +66,10 @@ decoder.to(device)
 # Define the loss function. 
 criterion = nn.CrossEntropyLoss().cuda() if torch.cuda.is_available() else nn.CrossEntropyLoss()
 
-# TODO #3: Specify the learnable parameters of the model.
+# Specify the learnable parameters of the model.
 params = list(decoder.parameters()) + list(encoder.embed.parameters())
 
-# TODO #4: Define the optimizer.
+# Define the optimizer.
 optimizer = torch.optim.Adam(params=params, lr=0.00001)
 
 # Set the total number of training steps per epoch.
